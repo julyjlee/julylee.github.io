@@ -8,17 +8,23 @@ redirect_from:
   - /about.html
 ---
 
-Nice to meet you. This is Yunjeong Lee's website. Here, you will be able to review a brief portfolio and CV about me. 
+Nice to meet you. This is Seungpil Lee's website. Here, you will be able to review a brief portfolio and CV about me. 
 
 <div class="content-container">
-  <img src="images/Hello.jpg" alt="profile" style="width: 300px; height: auto; border-radius: 10px;">
+  <img src="images/20241115_161350(1).jpg" alt="profile">
 </div>
 
-I'm a researcher transitioning from cognitive psychology to counseling and clinical psychology, driven by a strong desire to connect scientific insight with human care. With a background in Life Science and Psychology, I've explored how emotion and context influence language processing, including two years of research at GIST's Language, Cognition, & Brain Lab and a cross-cultural study on urban green spaces during my Korea-Germany Junior Research Fellowship at KIT.
+I study AI in two directions — from AI back to the human mind it imitates, and from the mind forward into AI design. My current focus is the cognition of intelligent systems, studied through LLMs. Mechanistic interpretability (sparse autoencoders) keeps me honest about mechanisms, and memory-augmented agents that learn at test time are the current testbed. I came in through literature and philosophy of mind, so cognitive science and STS sit naturally alongside the engineering. You can read more about how these interests connect in my [research philosophy](/research-philosophy/).
 
-Through these diverse experiences, I realized that what sustains my passion for research is seeing its real-world relevance - especially in helping individuals navigate emotional and psychological challenges. My goal is to integrate rigorous empirical methods with compassionate practice, with a particular focus on research related to LGBTQ+ identity and attachment patterns. I believe that meaningful change arises when evidence-based knowledge is applied in ways that honor the complexity of human experience.
+<div class="image-grid">
+  <img src="images/diagonal-flip.gif" alt="diagonal flip">
+  <img src="images/horizontal-align.gif" alt="horizontal align">
+  <img src="images/tetris.gif" alt="tetris">
+</div>
 
-If you'd like to connect or learn more about my work, feel free to reach out!
+I am currently solving visual reasoning benchmark, Abstraction and Reasoning Corpus (ARC) with [Prof. Sundong](https://sundong.kim/) in GIST. ARC is a kind of IQ test for computers - if we can solve this challenge, we might be able to develop AI with genuine reasoning capabilities.
+
+Perhaps you'll soon meet an AI that surpasses human intelligence. You might find my name there. If you'd like to contact me before that happens, please check the contact information on the left!
 
 
 <hr style="height:1px; border:none; background-color:#e5e5e5;">
@@ -27,7 +33,16 @@ If you'd like to connect or learn more about my work, feel free to reach out!
 
 # Publications
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.type != "domestic-conference" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+# Domestic Conference
+{% for post in site.publications reversed %}
+  {% if post.type == "domestic-conference" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
 <!-- 

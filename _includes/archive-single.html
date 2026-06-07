@@ -8,7 +8,7 @@
   {% endif %}
 
   <div class="archive__item-content">
-    <h2 class="archive__item-title">{{ post.title }}</h2>
+    <div class="archive__item-title" style="font-weight: bold; font-size: 1.2em; margin-bottom: 0.5em;">{{ post.title }}</div>
 
     {% if post.authors %}
       <p class="archive__item-authors">{{ post.authors | markdownify }}</p>
@@ -52,7 +52,11 @@
       {% endif %}
 
       {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" class="btn">{{ post.buttontext | default: "PAPER" }}</a>
+        <a href="{{ post.paperurl }}" class="btn">PAPER</a>
+      {% endif %}
+
+      {% if post.siteurl %}
+        <a href="{{ post.siteurl }}" class="btn">SITE</a>
       {% endif %}
     </div>
 
