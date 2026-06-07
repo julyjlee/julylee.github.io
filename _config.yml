@@ -20,6 +20,9 @@ baseurl: ""
 url: "https://julyjlee.github.io"
 repository: "julyjlee/julyjlee.github.io"
 
+# Site avatar / favicon (shown in the header brand and browser tab)
+favicon: "/images/yunjeong_favicon.png"
+
 # Copyright setting
 copyright: "© 2024-{currentYear} {author}"
 
