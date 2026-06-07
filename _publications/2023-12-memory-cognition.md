@@ -3,6 +3,7 @@ title: "Proficiency versus lexical processing efficiency as a measure of L2 lexi
 authors: "[Hyunah Baek](https://www.ajou.ac.kr/english/faculty/faculty.do), [**Yunjeong Lee**](https://julyjlee.github.io), [Wonil Choi](https://cogsci.gist.ac.kr/)"
 collection: publications
 pub_type: journal
+teaser: images/pub-memcog-2023.png
 permalink: /publication/2023-memory-cognition
 excerpt: "This study explores individual differences in word-frequency effects in second language (L2) visual word recognition, comparing proficiency measures with lexical processing efficiency as indicators of L2 lexical quality."
 date: 2023-12-01
